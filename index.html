@@ -3,59 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jose Clips | @joseeee._69 TikTok Live Highlights</title>
-  <meta name="description" content="The official clip hub for @joseeee._69 — TikTok's funniest live streamer. Gaming fails, funny moments, and unforgettable highlights.">
+  <title>JOSE CLIPS | @joseeee._69 — Trakas</title>
+  <meta name="description" content="The official clip hub for @joseeee._69. TikTok Live highlights. Gaming. Streets. No clean exits.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/thumb_1.jpg" type="image/jpeg">
 </head>
 <body>
-  <!-- Animated Background Slideshow -->
+  <!-- Cinematic Background -->
   <div class="bg-slideshow">
-    <div class="bg-slide active" style="background-image: url('assets/bg/gta_sunset.jpg')"></div>
-    <div class="bg-slide" style="background-image: url('assets/bg/gaming_neon.jpg')"></div>
-    <div class="bg-slide" style="background-image: url('assets/bg/city_night.jpg')"></div>
-    <div class="bg-slide" style="background-image: url('assets/bg/purple_city.jpg')"></div>
-    <div class="bg-slide" style="background-image: url('assets/bg/night_drive.jpg')"></div>
-    <div class="bg-slide" style="background-image: url('assets/bg/led_gaming.jpg')"></div>
+    <div class="bg-slide active"></div>
   </div>
   <div class="bg-overlay"></div>
+  <div class="vignette"></div>
+  <canvas id="smoke" class="smoke-canvas"></canvas>
   <canvas id="particles"></canvas>
 
   <!-- In-Game Notification Bar -->
   <div class="game-notification" id="gameNotif">
-    <div class="notif-icon">⚡</div>
+    <div class="notif-icon">⚠</div>
     <div class="notif-text">
       <span class="notif-label">SERVER ALERT</span>
-      <span class="notif-msg">Jose is LIVE right now on TikTok! Go watch.</span>
+      <span class="notif-msg">Jose en vivo — no te lo pierdas carnal.</span>
     </div>
-    <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="notif-btn">JOIN</a>
+    <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="notif-btn">ENTRAR</a>
   </div>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <span class="logo-accent">JOSE</span><span class="logo-dim">CLIPS</span>
+        <span class="logo-cross">✝</span>
+        <span class="logo-text-main">TRAKAS</span>
       </a>
       <div class="nav-status">
         <span class="status-dot online"></span>
-        <span class="status-text">SERVER ONLINE</span>
+        <span class="status-text">EN LINEA</span>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#schedule" class="nav-link">Schedule</a></li>
+        <li><a href="#home" class="nav-link">Inicio</a></li>
+        <li><a href="#schedule" class="nav-link">Semana</a></li>
         <li><a href="#roles" class="nav-link">Roles</a></li>
         <li><a href="#videos" class="nav-link">Videos</a></li>
         <li><a href="#clips" class="nav-link">Clips</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="nav-link btn-tiktok">Watch Live</a></li>
+        <li><a href="#gallery" class="nav-link">Galeria</a></li>
+        <li><a href="#about" class="nav-link">Info</a></li>
+        <li><a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="nav-link btn-tiktok">Ver Live</a></li>
       </ul>
     </div>
   </nav>
@@ -63,36 +61,38 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <div class="hero-badge">TIKTOK LIVE CLIPS</div>
+      <div class="hero-saint">✝</div>
       <h1 class="hero-title">
-        <span class="glow">JOSE</span>CLIPS
+        <span class="title-line1">Los</span>
+        <span class="title-main">TRAKAS</span>
+        <span class="title-line2">de Jose</span>
       </h1>
-      <p class="hero-subtitle">The funniest moments from @joseeee._69's TikTok Lives. Gaming. Fails. Friends. Pure content.</p>
+      <p class="hero-subtitle">Los momentos mas pesados de @joseeee._69. Calles. Humo. Noches largas. Siempre al tiro.</p>
       
       <!-- HUD-style Stats -->
       <div class="hud-stats">
         <div class="hud-stat">
-          <div class="hud-icon">❤️</div>
+          <div class="hud-icon">♥</div>
           <div class="hud-bar"><div class="hud-fill" style="width: 85%"></div></div>
           <span class="hud-val">2.1M</span>
         </div>
         <div class="hud-stat">
-          <div class="hud-icon">👥</div>
-          <div class="hud-bar"><div class="hud-fill cyan" style="width: 60%"></div></div>
+          <div class="hud-icon">☠</div>
+          <div class="hud-bar"><div class="hud-fill gold" style="width: 60%"></div></div>
           <span class="hud-val">50K</span>
         </div>
         <div class="hud-stat">
           <div class="hud-icon">🎬</div>
-          <div class="hud-bar"><div class="hud-fill green" style="width: 95%"></div></div>
-          <span class="hud-val">DAILY</span>
+          <div class="hud-bar"><div class="hud-fill red" style="width: 95%"></div></div>
+          <span class="hud-val">DIARIO</span>
         </div>
       </div>
 
       <div class="hero-buttons">
-        <a href="#schedule" class="btn btn-primary">📋 View Schedule</a>
+        <a href="#schedule" class="btn btn-primary">📋 La Semana</a>
         <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="btn btn-outline">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48 6.3 6.3 0 001.86-4.49V8.73a8.26 8.26 0 004.82 1.55v-3.4a4.85 4.85 0 01-1.1-.19z"/></svg>
-          Follow @joseeee._69
+          Seguir @joseeee._69
         </a>
       </div>
     </div>
@@ -107,178 +107,178 @@
   <section class="schedule" id="schedule">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Weekly RP Schedule</span>
-        <h2 class="section-title">Stream Schedule</h2>
-        <p class="section-desc">Every day has a theme. Show up, pick your role, and get into character.</p>
+        <span class="section-tag">La Calle No Descansa</span>
+        <h2 class="section-title">Semana de Trakas</h2>
+        <p class="section-desc">Cada dia tiene su rol. Ponte al tiro y entra al personaje.</p>
       </div>
       <div class="schedule-grid">
         <!-- Monday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">MON</span>
-            <span class="day-full">Monday</span>
+            <span class="day-abbr">LUN</span>
+            <span class="day-full">Lunes</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🔧</span>
-            <h3>Mechanic Monday</h3>
+            <h3>Taller y Tuneo</h3>
           </div>
-          <div class="schedule-desc">Wrench in hand, grease on the face. Fix cars, mod rides, run the shop. Mechanics keep the city rolling.</div>
+          <div class="schedule-desc">Las máquinas no se arreglan solas. Tunea, repara, y deja las trocas listas pa' la calle.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Repair player vehicles</div>
-            <div class="task"><span class="task-check">☐</span> Custom mod jobs</div>
-            <div class="task"><span class="task-check">☐</span> Chop shop runs</div>
-            <div class="task"><span class="task-check">☐</span> Tow broken cars</div>
+            <div class="task"><span class="task-check">☐</span> Reparar vehiculos</div>
+            <div class="task"><span class="task-check">☐</span> Mods y tuneo custom</div>
+            <div class="task"><span class="task-check">☐</span> Deshuesadero</div>
+            <div class="task"><span class="task-check">☐</span> Remolque de unidades</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag">🔧 Mechanic</span>
-            <span class="role-tag">🚗 Car Dealer</span>
-            <span class="role-tag">🏁 Racer</span>
+            <span class="role-tag">🔧 Mecánico</span>
+            <span class="role-tag">🏁 Tuner</span>
+            <span class="role-tag">🚗 Dealer</span>
           </div>
         </div>
 
         <!-- Tuesday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">TUE</span>
-            <span class="day-full">Tuesday</span>
+            <span class="day-abbr">MAR</span>
+            <span class="day-full">Martes</span>
           </div>
           <div class="schedule-theme">
-            <span class="theme-icon">💊</span>
-            <h3>Turf War Tuesday</h3>
+            <span class="theme-icon">💀</span>
+            <h3>Control de Territorio</h3>
           </div>
-          <div class="schedule-desc">Gangs hit the streets. Claim territory, run drugs, defend your block. Respect is earned with blood and hustle.</div>
+          <div class="schedule-desc">Las calles tienen dueño. Reclama tu bloque, mueve el producto, y defiende lo que es tuyo.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Claim gang turfs</div>
-            <div class="task"><span class="task-check">☐</span> Drug runs & deals</div>
-            <div class="task"><span class="task-check">☐</span> Gang shootouts</div>
-            <div class="task"><span class="task-check">☐</span> Trap house defense</div>
+            <div class="task"><span class="task-check">☐</span> Reclamar territorios</div>
+            <div class="task"><span class="task-check">☐</span> Rutas de producto</div>
+            <div class="task"><span class="task-check">☐</span> Disputas de zona</div>
+            <div class="task"><span class="task-check">☐</span> Defender el punto</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag illegal">🔫 Gang Member</span>
-            <span class="role-tag illegal">💊 Drug Dealer</span>
-            <span class="role-tag illegal">💰 Money Launderer</span>
+            <span class="role-tag street">💀 Soldado</span>
+            <span class="role-tag street">📦 Distribuidor</span>
+            <span class="role-tag street">💰 Lavador</span>
           </div>
         </div>
 
         <!-- Wednesday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">WED</span>
-            <span class="day-full">Wednesday</span>
+            <span class="day-abbr">MIE</span>
+            <span class="day-full">Miercoles</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🏦</span>
-            <h3>Heist Night Wednesday</h3>
+            <h3>Noche de Golpes</h3>
           </div>
-          <div class="schedule-desc">Plan it. Execute it. Get away with millions. The biggest heists happen mid-week when nobody expects it.</div>
+          <div class="schedule-desc">Planificalo. Ejecutalo. Limpia la cuenta. Los golpes mas grandes caen cuando nadie los espera.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Bank robbery</div>
-            <div class="task"><span class="task-check">☐</span> Jewelry store hit</div>
+            <div class="task"><span class="task-check">☐</span> Golpe al banco</div>
+            <div class="task"><span class="task-check">☐</span> Joyeria</div>
             <div class="task"><span class="task-check">☐</span> Fleeca job</div>
-            <div class="task"><span class="task-check">☐</span> Police chase getaway</div>
+            <div class="task"><span class="task-check">☐</span> Huir de la policia</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag illegal">🏦 Heist Crew</span>
-            <span class="role-tag illegal">🔫 Getaway Driver</span>
-            <span class="role-tag legal">👮 Police Pursuit</span>
+            <span class="role-tag street">🏦 Asaltante</span>
+            <span class="role-tag street">🚗 Piloto</span>
+            <span class="role-tag">👮 Persecucion</span>
           </div>
         </div>
 
         <!-- Thursday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">THU</span>
-            <span class="day-full">Thursday</span>
+            <span class="day-abbr">JUE</span>
+            <span class="day-full">Jueves</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🚑</span>
-            <h3>EMS & Rescue Thursday</h3>
+            <h3>Primeros Respondientes</h3>
           </div>
-          <div class="schedule-desc">Save lives, fight fires, respond to 911 calls. The city's first responders hold it all together.</div>
+          <div class="schedule-desc">Salva vidas, apaga fuegos, responde al 911. Alguien tiene que mantener la ciudad viva.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Respond to 911 calls</div>
-            <div class="task"><span class="task-check">☐</span> Revive downed players</div>
-            <div class="task"><span class="task-check">☐</span> Fire rescue missions</div>
+            <div class="task"><span class="task-check">☐</span> Responder al 911</div>
+            <div class="task"><span class="task-check">☐</span> Revivir jugadores</div>
+            <div class="task"><span class="task-check">☐</span> Rescates de fuego</div>
             <div class="task"><span class="task-check">☐</span> Hospital RP</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag legal">🚑 Paramedic</span>
-            <span class="role-tag legal">🚒 Firefighter</span>
-            <span class="role-tag legal">🏥 Doctor</span>
+            <span class="role-tag">🚑 Paramedico</span>
+            <span class="role-tag">🚒 Bombero</span>
+            <span class="role-tag">🏥 Doctor</span>
           </div>
         </div>
 
         <!-- Friday -->
         <div class="schedule-card featured">
           <div class="schedule-day">
-            <span class="day-abbr">FRI</span>
-            <span class="day-full">Friday</span>
+            <span class="day-abbr">VIE</span>
+            <span class="day-full">Viernes</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🚔</span>
-            <h3>Police Duty Friday</h3>
+            <h3>Patrulla y Orden</h3>
           </div>
-          <div class="schedule-desc">Cops flood the streets. High-speed chases, K-9 units, undercover ops. Law and order — or try to maintain it.</div>
+          <div class="schedule-desc">La ley llega fuerte los viernes. Persecuciones, operaciones encubiertas, K-9. A ver quien se pela.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Patrol the city</div>
-            <div class="task"><span class="task-check">☐</span> High-speed chases</div>
-            <div class="task"><span class="task-check">☐</span> Undercover sting ops</div>
-            <div class="task"><span class="task-check">☐</span> Traffic stops & arrests</div>
-            <div class="task"><span class="task-check">☐</span> K-9 Unit deployment</div>
+            <div class="task"><span class="task-check">☐</span> Patrullar la ciudad</div>
+            <div class="task"><span class="task-check">☐</span> Persecuciones altas</div>
+            <div class="task"><span class="task-check">☐</span> Operacion encubierta</div>
+            <div class="task"><span class="task-check">☐</span> Paradas de trafico</div>
+            <div class="task"><span class="task-check">☐</span> Unidad K-9</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag legal">👮 LSPD Officer</span>
-            <span class="role-tag legal">🕵️ Detective</span>
-            <span class="role-tag legal">🐕 K-9 Unit</span>
-            <span class="role-tag legal">🎖️ SWAT</span>
+            <span class="role-tag">👮 LSPD</span>
+            <span class="role-tag">🕵️ Detective</span>
+            <span class="role-tag">🐕 K-9</span>
+            <span class="role-tag">🎖️ SWAT</span>
           </div>
         </div>
 
         <!-- Saturday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">SAT</span>
-            <span class="day-full">Saturday</span>
+            <span class="day-abbr">SAB</span>
+            <span class="day-full">Sabado</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🏎️</span>
-            <h3>Street Race Saturday</h3>
+            <h3>Carreras Clandestinas</h3>
           </div>
-          <div class="schedule-desc">Engines screaming, tires burning. Underground races, car meets, and the fastest builds in the city.</div>
+          <div class="schedule-desc">Motor caliente, llantas quemadas. Las carreras mas rapidas de la ciudad. El que pierde, paga.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Underground street races</div>
-            <div class="task"><span class="task-check">☐</span> Car meet & showoff</div>
-            <div class="task"><span class="task-check">☐</span> Drift competitions</div>
-            <div class="task"><span class="task-check">☐</span> Pink slip bets</div>
+            <div class="task"><span class="task-check">☐</span> Carreras callejeras</div>
+            <div class="task"><span class="task-check">☐</span> Car meet</div>
+            <div class="task"><span class="task-check">☐</span> Drift</div>
+            <div class="task"><span class="task-check">☐</span> Apuestas de papeles</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag">🏁 Street Racer</span>
+            <span class="role-tag">🏁 Corredor</span>
             <span class="role-tag">🔧 Tuner</span>
-            <span class="role-tag illegal">🚔 Runner</span>
+            <span class="role-tag street">🚔 Huye</span>
           </div>
         </div>
 
         <!-- Sunday -->
         <div class="schedule-card">
           <div class="schedule-day">
-            <span class="day-abbr">SUN</span>
-            <span class="day-full">Sunday</span>
+            <span class="day-abbr">DOM</span>
+            <span class="day-full">Domingo</span>
           </div>
           <div class="schedule-theme">
             <span class="theme-icon">🏪</span>
-            <h3>Civ Life Sunday</h3>
+            <h3>Vida Civil</h3>
           </div>
-          <div class="schedule-desc">Chill day. Run your business, go fishing, hit the store, be a normal citizen. Everyone needs a day off.</div>
+          <div class="schedule-desc">Dia tranquilo. Maneja tu negocio, pesca, da rides. Todos necesitan un dia de descanso.</div>
           <div class="schedule-tasks">
-            <div class="task"><span class="task-check">☐</span> Run your business</div>
-            <div class="task"><span class="task-check">☐</span> Go fishing</div>
-            <div class="task"><span class="task-check">☐</span> Taxi/Uber runs</div>
-            <div class="task"><span class="task-check">☐</span> Hang out & chill RP</div>
+            <div class="task"><span class="task-check">☐</span> Manejar negocio</div>
+            <div class="task"><span class="task-check">☐</span> Pescar</div>
+            <div class="task"><span class="task-check">☐</span> Taxi / Uber</div>
+            <div class="task"><span class="task-check">☐</span> Hang out chill</div>
           </div>
           <div class="schedule-roles">
-            <span class="role-tag">🏪 Business Owner</span>
-            <span class="role-tag">🐟 Fisherman</span>
-            <span class="role-tag">🚕 Taxi Driver</span>
+            <span class="role-tag">🏪 Dueño</span>
+            <span class="role-tag">🐟 Pescador</span>
+            <span class="role-tag">🚕 Taxista</span>
             <span class="role-tag">🎵 DJ</span>
           </div>
         </div>
@@ -290,45 +290,45 @@
   <section class="roles" id="roles">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Pick Your Role</span>
-        <h2 class="section-title">RP Roles & Jobs</h2>
-        <p class="section-desc">Every player fills a role. Choose yours — from law enforcement to the underworld.</p>
+        <span class="section-tag">Escoge Tu Camino</span>
+        <h2 class="section-title">Roles</h2>
+        <p class="section-desc">Todos tienen un papel. El tuyo empieza aca.</p>
       </div>
       <div class="roles-grid">
         <!-- Legal Roles -->
         <div class="role-category">
-          <h3 class="role-cat-title"><span class="cat-dot legal"></span> Legal Jobs</h3>
+          <h3 class="role-cat-title"><span class="cat-dot legal"></span> La Ley</h3>
           <div class="role-list">
-            <div class="role-item"><span class="role-emoji">👮</span><span class="role-name">Police Officer</span><span class="role-pay">$5,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🚑</span><span class="role-name">Paramedic / EMS</span><span class="role-pay">$4,500/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🚒</span><span class="role-name">Firefighter</span><span class="role-pay">$4,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🔧</span><span class="role-name">Mechanic</span><span class="role-pay">$3,500/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🚕</span><span class="role-name">Taxi / Uber Driver</span><span class="role-pay">$2,500/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🚌</span><span class="role-name">Bus Driver</span><span class="role-pay">$2,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🚛</span><span class="role-name">Truck Driver</span><span class="role-pay">$3,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🐟</span><span class="role-name">Fisherman</span><span class="role-pay">$2,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">⚖️</span><span class="role-name">Lawyer / Judge</span><span class="role-pay">$6,000/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🏠</span><span class="role-name">Real Estate Agent</span><span class="role-pay">$3,500/hr</span></div>
-            <div class="role-item"><span class="role-emoji">🏪</span><span class="role-name">Store Owner</span><span class="role-pay">Varies</span></div>
-            <div class="role-item"><span class="role-emoji">🎵</span><span class="role-name">DJ / Music Producer</span><span class="role-pay">$2,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">👮</span><span class="role-name">Oficial de Policia</span><span class="role-pay">$5,000/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🚑</span><span class="role-name">Paramedico</span><span class="role-pay">$4,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🚒</span><span class="role-name">Bombero</span><span class="role-pay">$4,000/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🔧</span><span class="role-name">Mecanico</span><span class="role-pay">$3,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🚕</span><span class="role-name">Taxista</span><span class="role-pay">$2,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">⚖️</span><span class="role-name">Abogado / Juez</span><span class="role-pay">$6,000/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🏠</span><span class="role-name">Bienes Raices</span><span class="role-pay">$3,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🏪</span><span class="role-name">Dueño de Negocio</span><span class="role-pay">Varia</span></div>
+            <div class="role-item"><span class="role-emoji">🎵</span><span class="role-name">DJ / Productor</span><span class="role-pay">$2,500/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🚛</span><span class="role-name">Trailero</span><span class="role-pay">$3,000/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🐟</span><span class="role-name">Pescador</span><span class="role-pay">$2,000/hr</span></div>
+            <div class="role-item"><span class="role-emoji">🚌</span><span class="role-name">Chofer de Camion</span><span class="role-pay">$2,000/hr</span></div>
           </div>
         </div>
-        <!-- Illegal Roles -->
+        <!-- Street Roles -->
         <div class="role-category">
-          <h3 class="role-cat-title"><span class="cat-dot illegal"></span> Illegal Jobs</h3>
+          <h3 class="role-cat-title"><span class="cat-dot street"></span> La Calle</h3>
           <div class="role-list">
-            <div class="role-item"><span class="role-emoji">🔫</span><span class="role-name">Gang Member</span><span class="role-pay">Territory $</span></div>
-            <div class="role-item"><span class="role-emoji">💊</span><span class="role-name">Drug Dealer</span><span class="role-pay">$10K+/run</span></div>
-            <div class="role-item"><span class="role-emoji">🧪</span><span class="role-name">Drug Manufacturer</span><span class="role-pay">$15K+/batch</span></div>
-            <div class="role-item"><span class="role-emoji">🏦</span><span class="role-name">Heist Crew</span><span class="role-pay">$50K+/job</span></div>
-            <div class="role-item"><span class="role-emoji">🔫</span><span class="role-name">Arms Dealer</span><span class="role-pay">$8K+/sale</span></div>
-            <div class="role-item"><span class="role-emoji">🚗</span><span class="role-name">Car Booster</span><span class="role-pay">$5K+/car</span></div>
-            <div class="role-item"><span class="role-emoji">💰</span><span class="role-name">Money Launderer</span><span class="role-pay">10% cut</span></div>
-            <div class="role-item"><span class="role-emoji">🏪</span><span class="role-name">Chop Shop</span><span class="role-pay">$3K+/car</span></div>
-            <div class="role-item"><span class="role-emoji">🏴‍☠️</span><span class="role-name">Smuggler</span><span class="role-pay">$7K+/run</span></div>
-            <div class="role-item"><span class="role-emoji">🎭</span><span class="role-name">Con Artist</span><span class="role-pay">Varies</span></div>
-            <div class="role-item"><span class="role-emoji">🔓</span><span class="role-name">Hacker</span><span class="role-pay">$12K+/job</span></div>
-            <div class="role-item"><span class="role-emoji">🏃</span><span class="role-name">Getaway Driver</span><span class="role-pay">$10K+/heist</span></div>
+            <div class="role-item"><span class="role-emoji">💀</span><span class="role-name">Soldado de Cuadra</span><span class="role-pay">Territorio $</span></div>
+            <div class="role-item"><span class="role-emoji">📦</span><span class="role-name">Distribuidor</span><span class="role-pay">$10K+/ruta</span></div>
+            <div class="role-item"><span class="role-emoji">🧪</span><span class="role-name">Cocinero</span><span class="role-pay">$15K+/batch</span></div>
+            <div class="role-item"><span class="role-emoji">🏦</span><span class="role-name">Asaltante</span><span class="role-pay">$50K+/golpe</span></div>
+            <div class="role-item"><span class="role-emoji">🔫</span><span class="role-name">Armero</span><span class="role-pay">$8K+/venta</span></div>
+            <div class="role-item"><span class="role-emoji">🚗</span><span class="role-name">Booster</span><span class="role-pay">$5K+/carro</span></div>
+            <div class="role-item"><span class="role-emoji">💰</span><span class="role-name">Lavador</span><span class="role-pay">10% corte</span></div>
+            <div class="role-item"><span class="role-emoji">🏪</span><span class="role-name">Deshuesadero</span><span class="role-pay">$3K+/carro</span></div>
+            <div class="role-item"><span class="role-emoji">🏴‍☠️</span><span class="role-name">Contrabandista</span><span class="role-pay">$7K+/ruta</span></div>
+            <div class="role-item"><span class="role-emoji">🎭</span><span class="role-name">Estafador</span><span class="role-pay">Varia</span></div>
+            <div class="role-item"><span class="role-emoji">🔓</span><span class="role-name">Hacker</span><span class="role-pay">$12K+/golpe</span></div>
+            <div class="role-item"><span class="role-emoji">🏃</span><span class="role-name">Piloto de Escape</span><span class="role-pay">$10K+/golpe</span></div>
           </div>
         </div>
       </div>
@@ -339,9 +339,9 @@
   <section class="videos" id="videos">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Gaming Content</span>
-        <h2 class="section-title">Featured Videos</h2>
-        <p class="section-desc">GTA & FiveM highlights, trakas moments, and the wildest gaming clips.</p>
+        <span class="section-tag">Contenido Pesado</span>
+        <h2 class="section-title">Videos</h2>
+        <p class="section-desc">GTA y FiveM. Trakas. Los momentos mas duros.</p>
       </div>
       <div class="video-showcase">
         <div class="video-card large">
@@ -351,8 +351,8 @@
             <span class="video-label">TRAKAS</span>
           </div>
           <div class="video-info">
-            <h3>TRAKAS — GTA Funny Moments</h3>
-            <p>The wildest GTA moments that had everyone going crazy. Pure chaos energy.</p>
+            <h3>TRAKAS — Momentos GTA</h3>
+            <p>Los momentos mas locos que pusieron a temblar a todos. Puro desmadre.</p>
             <div class="video-tags"><span>#gta5</span><span>#trakas</span><span>#fivem</span></div>
           </div>
         </div>
@@ -363,20 +363,20 @@
             <span class="video-label">4K</span>
           </div>
           <div class="video-info">
-            <h3>TRAKAS HDSPM — GTA Online 4K</h3>
-            <p>GTA Online in 4K with the hardest trakas moments.</p>
+            <h3>TRAKAS HDSPM — GTA Online</h3>
+            <p>GTA Online en 4K con los trakas mas pesados.</p>
             <div class="video-tags"><span>#gtaonline</span><span>#4k</span></div>
           </div>
         </div>
         <div class="video-card">
           <div class="video-player" data-src="assets/vids/donas_rzr.mp4">
-            <img src="assets/bg/gaming_dark.jpg" alt="Donas Rzr GTA">
+            <img src="assets/bg/gaming_dark.jpg" alt="Donas Rzr">
             <div class="video-overlay"><button class="play-btn">▶</button></div>
             <span class="video-label">RZR</span>
           </div>
           <div class="video-info">
             <h3>Donas En El Rzr — GTA V</h3>
-            <p>Rzr donuts and insane stunts. This one goes crazy.</p>
+            <p>Donas y stunts. Esta se pasa de lanza.</p>
             <div class="video-tags"><span>#fivem</span><span>#stunts</span></div>
           </div>
         </div>
@@ -384,12 +384,12 @@
           <div class="video-player" data-src="assets/vids/fiveM_montage.mp4">
             <img src="assets/bg/gaming_neon.jpg" alt="FiveM Montage">
             <div class="video-overlay"><button class="play-btn">▶</button></div>
-            <span class="video-label">MONTAGE</span>
+            <span class="video-label">MONTAJE</span>
           </div>
           <div class="video-info">
-            <h3>FiveM Montage — Best Moments</h3>
-            <p>A curated montage of the hardest FiveM clips.</p>
-            <div class="video-tags"><span>#fivem</span><span>#montage</span></div>
+            <h3>FiveM — Lo Mejor</h3>
+            <p>Un recopilatorio de los clips mas duros de FiveM.</p>
+            <div class="video-tags"><span>#fivem</span><span>#montaje</span></div>
           </div>
         </div>
       </div>
@@ -400,9 +400,9 @@
   <section class="clips" id="clips">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Fresh Off the Live</span>
-        <h2 class="section-title">TikTok Clips</h2>
-        <p class="section-desc">The most recent highlights from Jose's TikTok Live sessions.</p>
+        <span class="section-tag">Recien Salido del Live</span>
+        <h2 class="section-title">Clips de TikTok</h2>
+        <p class="section-desc">Lo mas reciente de los lives de Jose.</p>
       </div>
       <div class="clips-grid">
         <div class="clip-card featured">
@@ -410,39 +410,39 @@
             <img src="assets/thumb_1.jpg" alt="TikTok Live Highlights">
             <div class="clip-overlay"><span class="clip-play">▶</span></div>
             <span class="clip-duration">0:11</span>
-            <span class="clip-badge">NEW</span>
+            <span class="clip-badge">NUEVO</span>
           </div>
           <div class="clip-info">
-            <h3>TikTok Live Highlights</h3>
-            <p>The wildest moments from last night's live session. Chat was going crazy.</p>
-            <div class="clip-meta"><span>Mar 12, 2026</span><span>205 views</span></div>
-            <div class="clip-tags"><span>#tiktoklive</span><span>#livehighlights</span></div>
+            <h3>Highlights del Live</h3>
+            <p>Los momentos mas locos de anoche. El chat no paraba.</p>
+            <div class="clip-meta"><span>Mar 12, 2026</span><span>205 vistas</span></div>
+            <div class="clip-tags"><span>#tiktoklive</span><span>#trakas</span></div>
           </div>
         </div>
         <div class="clip-card">
           <div class="clip-thumbnail">
-            <img src="assets/thumb_2.jpg" alt="Game Buggin Funny Moments">
+            <img src="assets/thumb_2.jpg" alt="Game Buggin">
             <div class="clip-overlay"><span class="clip-play">▶</span></div>
             <span class="clip-duration">0:45</span>
           </div>
           <div class="clip-info">
-            <h3>Game Buggin: Funny Moments</h3>
-            <p>Playing with friends and everything went wrong in the best way possible.</p>
-            <div class="clip-meta"><span>Mar 16, 2026</span><span>New</span></div>
-            <div class="clip-tags"><span>#gaming</span><span>#funnymoments</span></div>
+            <h3>Desmadre Con La Banda</h3>
+            <p>Jugando con la crew y todo se fue al carajo de la mejor manera.</p>
+            <div class="clip-meta"><span>Mar 16, 2026</span><span>Nuevo</span></div>
+            <div class="clip-tags"><span>#gaming</span><span>#desmadre</span></div>
           </div>
         </div>
         <div class="clip-card">
           <div class="clip-thumbnail">
-            <img src="assets/thumb_4.jpg" alt="Live Session Clip">
+            <img src="assets/thumb_4.jpg" alt="Live Session">
             <div class="clip-overlay"><span class="clip-play">▶</span></div>
             <span class="clip-duration">0:30</span>
           </div>
           <div class="clip-info">
-            <h3>Live Session Highlights</h3>
-            <p>Another banger from the stream. This one had the whole chat on fire.</p>
+            <h3>Momento del Live</h3>
+            <p>Otra joya del stream. Todo el chat prendido.</p>
             <div class="clip-meta"><span>Mar 2026</span><span>Popular</span></div>
-            <div class="clip-tags"><span>#livehighlights</span><span>#fyp</span></div>
+            <div class="clip-tags"><span>#live</span><span>#fyp</span></div>
           </div>
         </div>
         <div class="clip-card">
@@ -452,8 +452,8 @@
             <span class="clip-duration">0:15</span>
           </div>
           <div class="clip-info">
-            <h3>Best Stream Moment</h3>
-            <p>If you know, you know. This moment was legendary.</p>
+            <h3>Momento Legendario</h3>
+            <p>Si sabes, sabes. Este momento fue historico.</p>
             <div class="clip-meta"><span>Mar 2026</span><span>Trending</span></div>
             <div class="clip-tags"><span>#viral</span><span>#tiktoklive</span></div>
           </div>
@@ -466,21 +466,21 @@
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Visuals</span>
-        <h2 class="section-title">Gallery</h2>
-        <p class="section-desc">Screenshots, moments, and vibes from the streams.</p>
+        <span class="section-tag">Capturas</span>
+        <h2 class="section-title">Galeria</h2>
+        <p class="section-desc">Screenshots y momentos de los streams.</p>
       </div>
       <div class="gallery-mosaic">
-        <div class="mosaic-item tall"><img src="assets/bg/gta_sunset.jpg" alt="GTA Sunset"><div class="mosaic-overlay"><span>GTA Vibes</span></div></div>
-        <div class="mosaic-item"><img src="assets/vids/trakas_thumb_1.jpg" alt="Trakas Moment"><div class="mosaic-overlay"><span>TRAKAS</span></div></div>
-        <div class="mosaic-item"><img src="assets/bg/gaming_neon.jpg" alt="Neon Gaming"><div class="mosaic-overlay"><span>Gaming Setup</span></div></div>
-        <div class="mosaic-item wide"><img src="assets/bg/city_night.jpg" alt="City Night"><div class="mosaic-overlay"><span>Night City</span></div></div>
-        <div class="mosaic-item"><img src="assets/vids/trakas_thumb_2.jpg" alt="Trakas 2"><div class="mosaic-overlay"><span>4K Clips</span></div></div>
-        <div class="mosaic-item"><img src="assets/bg/purple_city.jpg" alt="Purple City"><div class="mosaic-overlay"><span>Aesthetic</span></div></div>
-        <div class="mosaic-item tall"><img src="assets/bg/night_drive.jpg" alt="Night Drive"><div class="mosaic-overlay"><span>Night Drive</span></div></div>
-        <div class="mosaic-item"><img src="assets/bg/led_gaming.jpg" alt="LED Gaming"><div class="mosaic-overlay"><span>LED Vibes</span></div></div>
-        <div class="mosaic-item"><img src="assets/thumb_1.jpg" alt="TikTok Live"><div class="mosaic-overlay"><span>TikTok Live</span></div></div>
-        <div class="mosaic-item wide"><img src="assets/bg/gaming_dark.jpg" alt="Dark Gaming"><div class="mosaic-overlay"><span>Dark Hours</span></div></div>
+        <div class="mosaic-item tall"><img src="assets/bg/dark_alley.jpg" alt="Callejon"><div class="mosaic-overlay"><span>La Calle</span></div></div>
+        <div class="mosaic-item"><img src="assets/vids/trakas_thumb_1.jpg" alt="Trakas"><div class="mosaic-overlay"><span>TRAKAS</span></div></div>
+        <div class="mosaic-item"><img src="assets/bg/gaming_neon.jpg" alt="Neon"><div class="mosaic-overlay"><span>Noche</span></div></div>
+        <div class="mosaic-item wide"><img src="assets/bg/city_night.jpg" alt="Ciudad"><div class="mosaic-overlay"><span>Los Santos</span></div></div>
+        <div class="mosaic-item"><img src="assets/vids/trakas_thumb_2.jpg" alt="4K"><div class="mosaic-overlay"><span>4K Clips</span></div></div>
+        <div class="mosaic-item"><img src="assets/bg/purple_city.jpg" alt="Purple"><div class="mosaic-overlay"><span>Aesthetic</span></div></div>
+        <div class="mosaic-item tall"><img src="assets/bg/night_drive.jpg" alt="Night"><div class="mosaic-overlay"><span>Noche</span></div></div>
+        <div class="mosaic-item"><img src="assets/bg/led_gaming.jpg" alt="LED"><div class="mosaic-overlay"><span>Setup</span></div></div>
+        <div class="mosaic-item"><img src="assets/thumb_1.jpg" alt="Live"><div class="mosaic-overlay"><span>Live</span></div></div>
+        <div class="mosaic-item wide"><img src="assets/bg/gaming_dark.jpg" alt="Dark"><div class="mosaic-overlay"><span>Oscuro</span></div></div>
       </div>
     </div>
   </section>
@@ -494,10 +494,10 @@
           <div class="about-glow"></div>
         </div>
         <div class="about-content">
-          <span class="section-tag">About</span>
-          <h2 class="section-title">Who is @joseeee._69?</h2>
-          <p>Jose is a TikTok Live streamer known for his hilarious gaming sessions, wild moments with friends, and an energy that keeps chat coming back for more.</p>
-          <p>This page is dedicated to capturing and sharing the best clips from his streams so you never miss a moment — even if you couldn't make it to the live.</p>
+          <span class="section-tag">Quien Es</span>
+          <h2 class="section-title">@joseeee._69</h2>
+          <p>Jose es un streamer de TikTok Live conocido por sus sesiones de gaming, momentos locos con la banda, y una energia que mantiene al chat regresando.</p>
+          <p>Esta pagina esta dedicada a capturar y compartir los mejores clips de sus streams para que nunca te pierdas un momento — aunque no hayas estado en el live.</p>
           <div class="about-links">
             <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="social-btn tiktok">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48 6.3 6.3 0 001.86-4.49V8.73a8.26 8.26 0 004.82 1.55v-3.4a4.85 4.85 0 01-1.1-.19z"/></svg>
@@ -515,11 +515,12 @@
   <section class="cta">
     <div class="container">
       <div class="cta-content">
-        <h2>Don't Miss Another Live</h2>
-        <p>Follow @joseeee._69 on TikTok and turn on notifications. New clips drop here after every stream.</p>
+        <div class="cta-saint">✝</div>
+        <h2>No Te Pierdas Ningun Live</h2>
+        <p>Sigue a @joseeee._69 en TikTok y prende las notificaciones. Clips nuevos despues de cada stream.</p>
         <div class="cta-buttons">
-          <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Follow on TikTok</a>
-          <a href="#schedule" class="btn btn-outline btn-lg">View Schedule</a>
+          <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Seguir en TikTok</a>
+          <a href="#schedule" class="btn btn-outline btn-lg">Ver Semana</a>
         </div>
       </div>
     </div>
@@ -530,12 +531,13 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <span class="logo-accent">JOSE</span><span class="logo-dim">CLIPS</span>
-          <p>Unofficial clip hub for @joseeee._69. All clips sourced from public TikTok Live sessions.</p>
+          <span class="footer-cross">✝</span>
+          <span class="logo-text-main">TRAKAS</span>
+          <p>Clip hub no oficial de @joseeee._69. Clips de sesiones publicas de TikTok Live.</p>
         </div>
         <div class="footer-links">
-          <a href="#home">Home</a><a href="#schedule">Schedule</a><a href="#roles">Roles</a>
-          <a href="#videos">Videos</a><a href="#clips">Clips</a><a href="#gallery">Gallery</a>
+          <a href="#home">Inicio</a><a href="#schedule">Semana</a><a href="#roles">Roles</a>
+          <a href="#videos">Videos</a><a href="#clips">Clips</a><a href="#gallery">Galeria</a>
         </div>
         <div class="footer-social">
           <a href="https://www.tiktok.com/@joseeee._69" target="_blank" rel="noopener" aria-label="TikTok">
@@ -547,7 +549,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>Jose Clips &copy; 2026. Not affiliated with TikTok.</p>
+        <p>✝ Jose Clips © 2026. No afiliado con TikTok.</p>
       </div>
     </div>
   </footer>

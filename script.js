@@ -96,12 +96,95 @@ if (videoModal) {
   });
 }
 
-// ===== PARTICLES =====
+// ===== SMOKE EFFECT =====
+const smokeCanvas = document.getElementById('smoke');
+if (smokeCanvas) {
+  const ctx = smokeCanvas.getContext('2d');
+  let smokeParticles = [];
+  const SMOKE_COUNT = 20;
+
+  function resizeSmoke() {
+    smokeCanvas.width = window.innerWidth;
+    smokeCanvas.height = window.innerHeight;
+  }
+
+  resizeSmoke();
+  window.addEventListener('resize', resizeSmoke);
+
+  class SmokeParticle {
+    constructor() {
+      this.reset();
+    }
+
+    reset() {
+      this.x = Math.random() * smokeCanvas.width;
+      this.y = smokeCanvas.height + Math.random() * 100;
+      this.size = Math.random() * 80 + 40;
+      this.speedX = (Math.random() - 0.5) * 0.3;
+      this.speedY = -(Math.random() * 0.5 + 0.2);
+      this.opacity = 0;
+      this.maxOpacity = Math.random() * 0.15 + 0.05;
+      this.life = 0;
+      this.maxLife = Math.random() * 300 + 200;
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      this.size += 0.2;
+      this.life++;
+
+      if (this.life < this.maxLife * 0.3) {
+        this.opacity = (this.life / (this.maxLife * 0.3)) * this.maxOpacity;
+      } else if (this.life > this.maxLife * 0.7) {
+        this.opacity = ((this.maxLife - this.life) / (this.maxLife * 0.3)) * this.maxOpacity;
+      }
+
+      if (this.life >= this.maxLife || this.y < -this.size) {
+        this.reset();
+      }
+    }
+
+    draw() {
+      const gradient = ctx.createRadialGradient(
+        this.x, this.y, 0,
+        this.x, this.y, this.size
+      );
+      gradient.addColorStop(0, `rgba(180, 160, 130, ${this.opacity})`);
+      gradient.addColorStop(1, 'rgba(180, 160, 130, 0)');
+
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < SMOKE_COUNT; i++) {
+    const p = new SmokeParticle();
+    p.life = Math.random() * p.maxLife;
+    p.y = Math.random() * smokeCanvas.height;
+    smokeParticles.push(p);
+  }
+
+  function animateSmoke() {
+    ctx.clearRect(0, 0, smokeCanvas.width, smokeCanvas.height);
+    smokeParticles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animateSmoke);
+  }
+
+  animateSmoke();
+}
+
+// ===== PARTICLES (DUST) =====
 const canvas = document.getElementById('particles');
 if (canvas) {
   const ctx = canvas.getContext('2d');
   let particles = [];
-  const PARTICLE_COUNT = 40;
+  const PARTICLE_COUNT = 30;
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -119,17 +202,16 @@ if (canvas) {
     reset() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 2 + 0.5;
-      this.speedX = (Math.random() - 0.5) * 0.3;
-      this.speedY = (Math.random() - 0.5) * 0.3;
-      this.opacity = Math.random() * 0.4 + 0.1;
-      this.color = Math.random() > 0.5 ? '#ff2d78' : '#00f0ff';
+      this.size = Math.random() * 1.5 + 0.3;
+      this.speedX = (Math.random() - 0.5) * 0.2;
+      this.speedY = (Math.random() - 0.5) * 0.2;
+      this.opacity = Math.random() * 0.3 + 0.05;
+      this.color = Math.random() > 0.7 ? '#c9a84c' : '#8a7a6a';
     }
 
     update() {
       this.x += this.speedX;
       this.y += this.speedY;
-
       if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
         this.reset();
       }
@@ -161,25 +243,13 @@ if (canvas) {
   animateParticles();
 }
 
-// ===== BACKGROUND SLIDESHOW =====
-const bgSlides = document.querySelectorAll('.bg-slide');
-let currentSlide = 0;
-
-function nextSlide() {
-  bgSlides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % bgSlides.length;
-  bgSlides[currentSlide].classList.add('active');
-}
-
-setInterval(nextSlide, 8000);
-
 // ===== TASK CHECKBOX TOGGLE =====
 document.querySelectorAll('.task').forEach(task => {
   task.addEventListener('click', () => {
     const check = task.querySelector('.task-check');
     if (check.textContent === '☐') {
       check.textContent = '☑';
-      task.style.color = '#00ff88';
+      task.style.color = '#c9a84c';
     } else {
       check.textContent = '☐';
       task.style.color = '';
